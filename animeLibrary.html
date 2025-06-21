@@ -1,0 +1,105 @@
+<!-- MaKayla Humphries -->
+<!-- CIT 215 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anime Library</title>
+    <script src = "midterm.js" defer></script>
+    <style>
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #C5D9D5;
+}
+
+header{
+    background-color: #DFF2EF;
+    padding: 10px;
+    border: dotted 5px #253259;
+}
+
+header h1{
+    text-align: center;
+    font-size: 45px;
+    color: #253259;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.wrapper{
+    background-color:#98A6A4;
+    padding: 50px;
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap; 
+    margin: auto;
+    justify-content: space-around;
+}
+.animesList{
+background-color: #DFF2EF;
+padding: 30px;
+margin-bottom: 20px;
+width: fit-content;
+border-radius: 20px;
+border: dotted 5px rgb(48, 36, 4);
+
+}
+.selectTasks{
+    background-color: #DFF2EF;
+    padding: 30px;
+    width: fit-content;
+    border-radius: 20px;
+    display: block;
+    border: dotted 3px #253259;
+
+}
+
+.selectTasks h2{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+    color:#0D0D0D ;
+
+}
+.selectedTask{
+    height: 40px;
+    width: 400px;
+    background-color: rgb(250, 245, 239);
+    margin: 10px;
+    border: dotted 5px #253259;
+    font-size: 20px;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Anime Library</h1>
+    </header>
+           <div class="wrapper">
+            <div class="pic">
+                <h2>Anime Watched List</h2>
+                <div class="animesList"></div>
+            </div>
+        <div class="selectTasks">
+
+            <h2>What would you like to to?</h2>
+            <br>
+            <ul>
+                <li>Create an anime selection -> <span>C</span></li><br>
+                <li>Read details of the anime -> <span>R</span></li><br>
+                <li>Update the details for an anime -> <span>U</span></li><br>
+                <li>Delete an anime selection -> <span>D</span></li><br>
+            </ul>
+            <br>
+            <label for="task">Enter the task's code:</label>
+            <input type="text" id="task" name="task" maxlength="5" size="5"></input>
+            <button onclick="showInfo()">Enter</button>
+            <br>
+        <div class="selectedTask"></div>   
+        </div>
+    </div>   
+</body>
+</html>
